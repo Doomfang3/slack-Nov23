@@ -1,3 +1,51 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
 /*
 background purple: #540B51
 background ivory: #F3EAE2
@@ -8,3 +56,122 @@ paragraph yellow: #ECB12F
 links blue: #2E71A6
 footer links grey: #454245
 */
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  max-width: calc(100vw - 10px);
+}
+
+.navLinks {
+  display: none;
+}
+
+nav {
+  display: flex;
+  background-color: #540B51;
+  justify-content: space-between;
+  align-items: center;
+  padding: .5rem;
+}
+
+.slackLogo {
+  width: 80px;
+}
+
+.btnCtn {
+  display: flex;
+  gap: 20px;
+}
+
+nav button {
+  all: unset;
+  height: 15px;
+  cursor: pointer;
+}
+
+nav button img {
+  height: 15px;
+}
+
+header {
+  background-color: #540B51;
+  padding: .5rem;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.subTitle {
+  color: white;
+  text-align: center;
+  font-size: .8rem;
+  margin-bottom: 1.5rem;
+}
+
+.subTitle span {
+  color: #ECB12F;
+  font-weight: 600;
+}
+
+.authCtn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.authCtn button {
+  background-color: white;
+  color: #540B51;
+  font-weight: bold;
+  font-size: .6rem;
+  text-transform: uppercase;
+  padding: .5rem 0;
+  border-radius: 1px;
+  border: none;
+}
+
+button.googleSignup {
+  background-color: #4285F4;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: .25rem;
+  justify-content: space-between;
+}
+
+.googleLogoCtn {
+  background-color: white;
+  height: 25px;
+  width: 25px;
+  border-radius: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.googleSignup img {
+  height: 15px;
+}
+
+.googleSignup span:last-child {
+  width: 25px;
+}
+
+.heroImgCtn {
+  margin-top: 2rem;
+  width: 125vw;
+}
+
+.heroImgCtn img {
+  max-width: unset;
+  width: 125vw;
+}
